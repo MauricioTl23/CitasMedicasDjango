@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi primera plantilla cono parametros</title>
+    </head>
+    <body>
+        <h1>Nombre del Usuario: {{Nombre}}</h1>
+        <h2>Fecha Actual: {{FechaActual.day}} / {{FechaActual.month}} / {{FechaActual.year}}</h2>
+        <h3>Cantidad de Departamentos: {{departamentos|length}}</h3>
+        {#Ciclo para mostrar los departamentos de Bolivia#}
+        <ul>
+            {% for dep in departamentos %}
+                {% if dep == 'Oruro' %}
+                    <li style="color:red">{{dep|upper}}</li>
+                {% else %}
+                    <li>{{dep|upper}}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </body>
+</html>
