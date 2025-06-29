@@ -8,19 +8,6 @@ from django.template import Template, Context, loader
 
 
 #New view (pasando como parametro un request)
-def welcome(request):
-    return HttpResponse("Bienvenido")
-
-def welcome1(request):
-    return HttpResponse("<p style='color: red;'>Bienvenido =)")
-
-def agecategory(request,age):
-    if age >= 18:
-        categoria = "Adulto"
-    else:
-        categoria = "Infante"
-    resultado = "<h1>Categoria de la edad: %s</h1>" %categoria
-    return HttpResponse(resultado)
 
 def obtenermomentoactual(request):
     respuesta = "<h1>Momento Actual: {0}</h1>".format(datetime.datetime.now().strftime("%A %d/%m/%Y %H:%M:%S"))
