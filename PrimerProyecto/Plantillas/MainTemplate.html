@@ -1,16 +1,12 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{% block tittle %} {% endblock %}</title>
-        <link type="text/css" rel="stylesheet" href="{% static 'css/ShipBarCSS.css' %}">
-    </head>
-    <body>
-        {% include "ShipBarTemplate.html" %}
-        <h1 style="color: green; text-align: center;">CAJA NACIONAL DE SALUD</h1>
-        {% block content %}
-
-        {% endblock %}
-        <p>Este es el pie de pagina</p>
-    </body>
+<head>
+    <title>CAJA NACIONAL DE SALUD</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/ShipBarCSS.css' %}">
+</head>
+<body>
+    {% include "ShipBarTemplate.html" %}
+    {% block content %}{% endblock %}
+</body>
 </html>

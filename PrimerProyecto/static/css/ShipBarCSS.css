@@ -1,27 +1,51 @@
-  #NavBar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #0C5B0F;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+.navbar {
+  background-color: white;
+  padding: 10px;
+}
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  #NavBar li {
-      float: left;
- 
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  gap: 20px;
+}
 
-  }
+.nav-link {
+  text-decoration: none;
+  color: #137727;
+  font-weight: bold;
+  font-family: "Comic Relief", system-ui;
+  font-size: 20px;
+}
 
-  #NavBar li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
+.nav-link:hover {
+  color: #7cd588;
+}
 
-  #NavBar li a:hover {
-      background-color: darkgrey;
-  }
+.brand {
+  font-family: "Comic Relief", system-ui;
+  font-style: normal;
+  font-size: 60px;
+  font-weight: bold;
+  color: #0c4515;
+  text-decoration: none;
+}
+
+#logo{
+    width: auto;
+    height: 80px;
+} 
+
+.logo_brand_group {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+

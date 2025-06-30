@@ -1,21 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
 <head>
-  
+  <title>CAJA NACIONAL DE SALUD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <ul id="NavBar" class="active">
-    <li><a href="MenuTemplate.html">MENU PRINCIPAL</a></li>
-    <li><a href="default.asp">ESPECIALIDADES</a></li>
-    <li><a href="default.asp">DOCTORES</a></li>
-    <li><a href="default.asp">RESERVAR CITA</a></li>
-    <li><a href="default.asp">MIS CITAS</a></li>
-    <li><a href="about.asp">ACERCA DE</a></li>
-    <li style="float:right"><a href="default.asp">CERRAR SESION</a></li>
-    <li style="float:right;"><a href="contact.asp">MI PERFIL</a></li>
-  </ul>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo_brand_group">
+        <a id="link_image" href="Plantillas/MainTemplate.html"><img id="logo" src="{% static 'images/logo_cns.png' %}"
+            alt="Logo CNS"></a>
+        <a class="brand" href="MainTemplate.html">CNS</a>
+      </div>
+      <div class="nav-links">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Menu Principal</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Especialidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Doctores</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Reservar Cita</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Mis Citas</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Cerrar Sesion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <footer class="footer_navbar">
+    <p>&copy; 2025 Caja Nacional de Salud. Todos los derechos reservados.</p>
+  </footer>
 </body>
 
 </html>
